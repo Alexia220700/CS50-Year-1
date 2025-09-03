@@ -1,0 +1,2 @@
+1 To characterize the audio aura, we need to calculate the average energy, valence, danceability.
+2 Better ways of calculating this aura would be including genre and lyrics analysis.
