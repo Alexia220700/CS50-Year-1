@@ -1,0 +1,158 @@
+body
+{
+    margin:0;
+    padding:0;
+    background-color: #fffbf9;
+}
+
+.posterimage
+{
+    font-family: Arial;
+    font-size: 26px;
+    color: #6c0000;
+    margin-bottom: 18px;
+    margin-top: 0px;
+    width: 100%;
+    text-align: left;
+
+
+    img
+    {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+ h3, h4, h5
+{
+    font-size: 23px;
+    color: #bb0c0c;
+    margin-top: 48px;
+    /*used to make the heading stay on a row*/
+    white-space: nowrap;
+}
+
+
+p
+{
+    font-size: 20px;
+    margin-top: 32px;
+    font-family: Times New Roman;
+    width: 100%;
+    text-align: center;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/*for aligning the first div */
+.container
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 28px;
+
+}
+
+.fade-in
+{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in.visible
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@keyframes fadeIn
+{
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a
+{
+    /*force the color change*/
+    color: #2e7e5f !important;
+    font-size: 16px;
+    /*inline-block used to fit every type of text width for bgcolor*/
+    display: inline-block;
+    margin: 0;
+    font-family: Arial;
+    background-color: #fce5e5;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #fce5e5;
+    background-color: #C41A0B;
+    transition: transform 0.1s;
+}
+
+/*create menu bar background*/
+nav ul
+{
+    display:flex;
+    /* Disperse items */
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0005;
+}
+
+/*align links to left and horizontally*/
+nav ul li
+{
+    float: left;
+}
+
+
+/*made them look like buttons*/
+nav ul li a {
+    display: block;
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: #343434;
+}
+
+footer
+{
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3px;
+}
+
+

@@ -1,0 +1,192 @@
+body
+{
+    background-color: #fffbf9;
+}
+
+h1
+{
+    font-family: Arial;
+    font-size: 26px;
+    color: #6c0000;
+    margin-bottom: -39px;
+    width: 100%;
+
+}
+
+h2, h4
+{
+    color: #bb0c0c;
+    margin-left: 10px;
+}
+
+p
+{
+    font-size: 20px;
+    margin-top: 1000px;
+    font-family: Times New Roman;
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+    /*rgba for color of the shadow, R, G, B all 0 = black
+      0.5 = opacity
+      0 0 horizontal and vertical distance of the shadow
+      ...px = blur radius*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-right:0px;
+    margin-left:0px;
+    margin-bottom: 14px;
+    margin-right: 12px;
+}
+
+/*made div a flex container, enabling the use of flexbox properties*/
+div
+{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-top: -24px;
+    margin-bottom: 80px;
+    margin-bottom:100px;
+}
+
+/*make the images hover*/
+.hover-image
+{
+    width: 200px;
+    height: 200px;
+    transition: transform 0.1s;
+}
+
+.image1:hover {
+    content: url('back/1977.png');
+}
+
+.image2:hover {
+    content: url('back/1977 (1).png');
+}
+
+.image3:hover {
+    content: url('back/1977 (2).png');
+}
+
+.image4:hover {
+    content: url('back/1977 (3).png');
+}
+
+.image5:hover {
+    content: url('back/1977 (4).png');
+}
+
+.image6:hover {
+    content: url('back/1977 (5).png');
+}
+
+.movieslinks
+{
+    display: grid;
+    /*creates 3 columns, 1 fraction of the available space*/
+    grid-template-columns: repeat(3, 1fr);
+    /*creates 2 rows, 1 fraction of the available space*/
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap between items as needed */
+    justify-items: flex-start;
+
+}
+
+.movieslinks img
+{
+
+    width:100%;
+    height:40%;
+    border-radius: 13px;
+    margin-top: 30px;
+}
+
+/*create menu bar background*/
+nav ul
+{
+    display:flex;
+    /* Disperse items */
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0005;
+}
+
+/*align links to left and horizontally*/
+nav ul li
+{
+    float: left;
+}
+
+/*made them look like buttons*/
+nav ul li a
+{
+    display: block;
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: #343434;
+}
+
+footer
+{
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    /*height of footer*/
+    padding: 20px;
+    position: static;
+    width: 100%;
+}
+
+a
+{
+    /*force the color change*/
+    color: #2e7e5f !important;
+    font-size: 16px;
+    /*inline-block used to fit every type of text width for bgcolor*/
+    display: inline-block;
+    margin: 0;
+    font-family: Arial;
+    background-color: #fce5e5;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+h1 img
+{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+
+.posterimage
+{
+
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-bottom: 70px;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+
+

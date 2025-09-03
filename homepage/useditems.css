@@ -1,0 +1,106 @@
+body
+{
+    background-color: #fffbf9;
+}
+
+/*create menu bar background*/
+nav ul
+{
+    display:flex;
+    /* Disperse items */
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0005;
+}
+
+/*align links to left and horizontally*/
+nav ul li
+{
+    float: left;
+}
+
+
+
+/*made them look like buttons*/
+nav ul li a
+{
+    display: block;
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover
+{
+    background-color: #343434;
+}
+
+/*for the links*/
+a
+{
+    /*force the color change*/
+    color: #2e7e5f !important;
+    font-size: 16px;
+    /*inline-block used to fit every type of text width for bgcolor*/
+    display: inline-block;
+    margin: 0;
+    font-family: Arial;
+    background-color: #fce5e5;
+    white-space: nowrap;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #fce5e5;
+    background-color: #C41A0B;
+    transition: transform 0.1s;
+}
+
+body h1
+{
+    text-align:left;
+    margin-left:10px;
+    margin-right: 10px;
+    color: #6c0000;
+    margin-top:20px;
+    font-family: Arial;
+    font-size:25px;
+}
+
+
+
+
+
+footer
+{
+    background-color: #0f0005;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.footer
+{
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+h2, h3, h4
+{
+    text-align:left;
+    margin-left:10px;
+    color: #6c0000;
+}
+
+

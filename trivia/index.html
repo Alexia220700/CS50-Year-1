@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+
+                <hr>
+                <!-- question -->
+                 <h3>Which one of the following castles from Romania was named Dracula's Castle?</h3>
+                 <button data-correct="false">Peleș Castle</button>
+                 <button data-correct = "true">Bran Castle</button>
+                 <button data-correct="false">Corvin Castle</button>
+                 <button data-correct="false">Banffy Castle</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- second question -->
+                <h3>What is the most famous food in Romania?</h3>
+                <!-- the responses to my question -->
+                 <input type="text" id="response">
+                 <button id="submit">Submit</button>
+            </div>
+        </div>
+
+<script>
+function displayText(button, message)
+{
+    var newText = document.createElement("p");
+    newText.textContent = message;
+    button.parentNode.insertBefore(newText, button.nextSibling);
+}
+
+document.querySelectorAll('button').forEach(button =>
+{
+    button.addEventListener('click', function()
+    {
+        if (this.getAttribute('data-correct') == 'true')
+        {
+            this.style.backgroundColor = '#008000'; // Green for correct
+            displayText(this, "Correct!");
+        }
+        else
+        {
+            this.style.backgroundColor = '#FF0000'; // Red for incorrect
+            displayText(this, "Incorrect");
+        }
+    });
+});
+
+/*check if answer is correct or incorrect for the second question*/
+document.getElementById('submit').addEventListener('click', function()
+{
+    var response = document.getElementById('response').value;
+    var feedback = document.getElementById('feedback');
+
+    if (response.toLowerCase() === 'sarmale')
+    { // Assuming 'sarmale' is the correct answer
+        document.getElementById('response').style.backgroundColor = '#008000'; // Green
+        feedback.textContent = 'Correct!';
+    }
+    else
+    {
+        document.getElementById('response').style.backgroundColor = '#FF0000'; // Red
+        feedback.textContent = 'Incorrect';
+    }
+});
+</script>
+
+    </body>
+</html>
